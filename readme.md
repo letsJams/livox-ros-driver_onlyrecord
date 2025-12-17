@@ -1,4 +1,4 @@
-从https://github.com/Livox-SDK/livox_ros_driver克隆而来。该项目用于资源受限的嵌入式设备，移除PCL库和rivz的依赖，移除hub相关代码，只保留rosbag的录制功能。已经在树莓派4B（Ubuntu 20.05+ROS noetic）已经验证编译通过。
+从[livox_ros_driver](https://github.com/Livox-SDK/livox_ros_driver)克隆而来。该项目用于资源受限的嵌入式设备，移除PCL库和rivz的依赖，移除hub相关代码，只保留rosbag的录制功能。已经在树莓派4B（Ubuntu 20.05+ROS noetic）已经验证编译通过。
 ## Livox ROS 驱动完整代码结构分析
 
 ### 目录结构
@@ -711,3 +711,4 @@ tag: 0
 line: 0
 
 ```
+
