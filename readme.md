@@ -1,3 +1,4 @@
+从https://github.com/Livox-SDK/livox_ros_driver克隆而来。该项目用于资源受限的嵌入式设备，移除PCL库和rivz的依赖，移除hub相关代码，只保留rosbag的录制功能。已经在树莓派4B（Ubuntu 20.05+ROS noetic）已经验证编译通过。
 ## Livox ROS 驱动完整代码结构分析
 
 ### 目录结构
@@ -698,7 +699,7 @@ main()
 roslaunch livox_ros_driver livox_lidar.launch   xfer_format:=1   output_type:=1   lidar_bag:=true   imu_bag:=false   publish_freq:=10.0
 ```
 
-现在可以看到录制的bag消息了。需要开三个终端，A:roscore B:rosbag paly C:rostopic echo /livox/lidar
+现在可以看到录制的bag消息了。需要开三个终端，A:roscore B:rosbag play yourbagname.bag C:rostopic echo /livox/lidar
 
 ```
 offset_time: 100032270
@@ -708,4 +709,5 @@ z: -0.29100000858306885
 reflectivity: 1
 tag: 0
 line: 0
+
 ```
